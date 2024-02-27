@@ -4,9 +4,9 @@ title: Introduction
 
 Documentation for BizTix, your guide to navigating and utilizing our ticket management system effectively. {% .lead %}
 
-{% quick-links %}
+<!-- {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
+{% quick-link title="Quickstart" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
 
 {% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
 
@@ -14,7 +14,7 @@ Documentation for BizTix, your guide to navigating and utilizing our ticket mana
 
 {% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
 
-{% /quick-links %}
+{% /quick-links %} -->
 
 ---
 
