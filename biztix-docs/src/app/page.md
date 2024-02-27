@@ -1,8 +1,8 @@
 ---
-title: Getting started
+title: Introduction
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. {% .lead %}
+Documentation for BizTix, your guide to navigating and utilizing our ticket management system effectively. {% .lead %}
 
 {% quick-links %}
 
@@ -16,97 +16,39 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% /quick-links %}
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
-
 ---
 
-## Quick start
+## Overview of BizTix
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
+BizTix is designed to enhance collaboration and knowledge sharing within a dynamic community environment, specifically tailored for educational programs, hackathons, and collaborative projects. It serves as a centralized platform where participants can ask questions and engage with mentors and organizers for guidance and support. The application leverages the power of Firebase to provide real-time interactions, ensuring that questions, updates, and team modifications are instantly accessible to all users.
 
-### Installing dependencies
+## Target Audience
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+### Participants
 
-```shell
-npm install
-```
+Individuals or groups seeking to contribute to or learn from the community through questions, discussions, and team collaborations.
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+### Mentors
 
-{% callout type="warning" title="Oh no! Something bad happened!" %}
-Disclaimer test. inline `code` [link](/)
-{% /callout %}
+Experienced users who provide answers, guidance, and support to participants, helping them navigate challenges and obstacles.
 
-### Configuring the library
+### Organizers
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+Administrators and BizTech coordinators who oversee the platform's operation, ensuring a productive and respectful environment for all users.
 
-```js
-async function handleDeleteQuestion(questionId) {
-  const questionRef = doc(db, 'tickets', questionId)
-  try {
-    await deleteDoc(questionRef)
-  } catch (error) {
-    console.error('Error deleting question: ', error)
-  }
-}
-```
+## Core Features and Benefits
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+- **Team Management:** Users can create, join, or manage teams, fostering collaboration and shared learning experiences.
+- **Question Management:** A comprehensive system allows users to post questions, categorize them, and receive real-time answers. Questions can be expanded to reveal detailed answers, images, and additional content.
+- **Real-Time Interactions:** Leveraging Firebase, the application offers live updates to questions, team changes, and notifications, ensuring users have the latest information.
+- **Role-Based Access Control:** Different levels of access and functionalities are available based on user roles, enabling a structured and organized platform experience.
+- **Interactive Features:** Expanding question entries and real-time data handling provide an engaging user experience, encouraging active participation.
+- **Security and Privacy:** Built with Firebase's security rules, the application ensures user data protection and privacy, allowing for safe and secure interactions.
 
-{% callout title="You should know!" %}
-Disclaimer test. inline `code` [link](/)
-{% /callout %}
+## System Requirements
 
----
+The web application is accessible through any modern web browser (Chrome, Firefox, Safari, Edge) on both desktop and mobile devices. An internet connection is required for real-time data syncing and interaction. For the best experience, users should ensure their browsers are up-to-date.
 
-## Basic usage
+## Conclusion
 
-Praesentium laudantium magni. Consequatur reiciendis aliquid nihil iusto ut in et. Quisquam ut et aliquid occaecati. Culpa veniam aut et voluptates amet perspiciatis. Qui exercitationem in qui. Vel qui dignissimos sit quae distinctio.
-
-### Your first cache
-
-Minima vel non iste debitis. Consequatur repudiandae et quod accusamus sit molestias consequatur aperiam. Et sequi ipsa eum voluptatibus ipsam. Et quisquam ut.
-
-Qui quae esse aspernatur fugit possimus. Quam sed molestiae temporibus. Eum perferendis dignissimos provident ea et. Et repudiandae quasi accusamus consequatur dolore nobis. Quia reiciendis necessitatibus a blanditiis iste quia. Ut quis et amet praesentium sapiente.
-
-Atque eos laudantium. Optio odit aspernatur consequuntur corporis soluta quidem sunt aut doloribus. Laudantium assumenda commodi.
-
-### Clearing the cache
-
-Vel aut velit sit dolor aut suscipit at veritatis voluptas. Laudantium tempore praesentium. Qui ut voluptatem.
-
-Ea est autem fugiat velit esse a alias earum. Dolore non amet soluta eos libero est. Consequatur qui aliquam qui odit eligendi ut impedit illo dignissimos.
-
-Ut dolore qui aut nam. Natus temporibus nisi voluptatum labore est ex error vel officia. Vero repellendus ut. Suscipit voluptate et placeat. Eius quo corporis ab et consequatur quisquam. Nihil officia facere dolorem occaecati alias deleniti deleniti in.
-
-### Contacting Dennis
-
-Officia nobis tempora maiores id iusto magni reprehenderit velit. Quae dolores inventore molestiae perspiciatis aut. Quis sequi officia quasi rem officiis officiis. Nesciunt ut cupiditate. Sunt aliquid explicabo enim ipsa eum recusandae. Vitae sunt eligendi et non beatae minima aut.
-
-Harum perferendis aut qui quibusdam tempore laboriosam voluptatum qui sed. Amet error amet totam exercitationem aut corporis accusantium dolorum. Perspiciatis aut animi et. Sed unde error ut aut rerum.
-
-Ut quo libero aperiam mollitia est repudiandae quaerat corrupti explicabo. Voluptas accusantium sed et doloribus voluptatem fugiat a mollitia. Numquam est magnam dolorem asperiores fugiat. Soluta et fuga amet alias temporibus quasi velit. Laudantium voluptatum perspiciatis doloribus quasi facere. Eveniet deleniti veniam et quia veritatis minus veniam perspiciatis.
-
----
-
-## Getting help
-
-Consequuntur et aut quisquam et qui consequatur eligendi. Necessitatibus dolorem sit. Excepturi cumque quibusdam soluta ullam rerum voluptatibus. Porro illo sequi consequatur nisi numquam nisi autem. Ut necessitatibus aut. Veniam ipsa voluptatem sed.
-
-### Submit an issue
-
-Inventore et aut minus ut voluptatem nihil commodi doloribus consequatur. Facilis perferendis nihil sit aut aspernatur iure ut dolores et. Aspernatur odit dignissimos. Aut qui est sint sint.
-
-Facere aliquam qui. Dolorem officia ipsam adipisci qui molestiae. Error voluptatem reprehenderit ex.
-
-Consequatur enim quia maiores aperiam et ipsum dicta. Quam ut sit facere sit quae. Eligendi veritatis aut ut veritatis iste ut adipisci illo.
-
-### Join the community
-
-Praesentium facilis iste aliquid quo quia a excepturi. Fuga reprehenderit illo sequi voluptatem voluptatem omnis. Id quia consequatur rerum consectetur eligendi et omnis. Voluptates iusto labore possimus provident praesentium id vel harum quisquam. Voluptatem provident corrupti.
-
-Eum et ut. Qui facilis est ipsa. Non facere quia sequi commodi autem. Dicta autem sit sequi omnis impedit. Eligendi amet dolorum magnam repudiandae in a.
-
-Molestiae iusto ut exercitationem dolorem unde iusto tempora atque nihil. Voluptatem velit facere laboriosam nobis ea. Consequatur rerum velit ipsum ipsam. Et qui saepe consequatur minima laborum tempore voluptatum et. Quia eveniet eaque sequi consequatur nihil eos.
+This web application represents a significant step forward in facilitating collaborative learning and problem-solving within community-driven projects and events. By integrating real-time data exchange, comprehensive team and question management, and secure, role-based access, the platform ensures that every participant, mentor, and organizer can efficiently contribute to and benefit from the collective knowledge and experience of the community.
