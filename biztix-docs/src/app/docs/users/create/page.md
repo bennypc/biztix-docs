@@ -28,7 +28,7 @@ The API uses the `POST` method to send data to the server.
 The request body must contain a JSON object with the following properties:
 
 - `email` (string, required): The email address of the user.
-- `education` (string, optional): The education level of the user.
+- `education` (string, optional): The education of the user.
 - `studentId` (number, optional): The student ID of the user.
 - `fname` (string, required): The first name of the user.
 - `lname` (string, required): The last name of the user.
@@ -57,11 +57,11 @@ Here is an example of a valid request to the `create` API:
 ```json
 {
   "email": "user@example.com",
-  "education": "Bachelor's",
-  "studentId": 123456,
+  "education": "UBC",
+  "studentId": 12345678,
   "fname": "John",
   "lname": "Doe",
-  "faculty": "Engineering",
+  "faculty": "Science",
   "major": "Computer Science",
   "year": 3,
   "gender": "Male",
@@ -85,11 +85,11 @@ On successful creation of the user, the API returns a 201 status code with the f
     "params": {
       "Item": {
         "id": "user@example.com",
-        "education": "Bachelor's",
-        "studentId": 123456,
+        "education": "UBC",
+        "studentId": 12345678,
         "fname": "John",
         "lname": "Doe",
-        "faculty": "Engineering",
+        "faculty": "Science",
         "major": "Computer Science",
         "year": 3,
         "gender": "Male",
