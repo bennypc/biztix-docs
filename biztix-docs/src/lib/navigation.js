@@ -11,4 +11,11 @@ export const navigation = [
       { title: 'Example Page 2', href: '/docs/example-page-2' },
     ],
   },
+  {
+    title: 'Users',
+    links: [
+      { title: 'Users', href: '/docs/users' },
+      { title: 'Create User', href: '/docs/users/create' },
+    ],
+  },
 ]
