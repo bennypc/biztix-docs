@@ -3,11 +3,14 @@
 import { Fragment } from 'react'
 import { Highlight } from 'prism-react-renderer'
 
-export function Fence({ children, language }) {
+export function Fence({ children, language = 'javascript' }) {
+  // Ensure children is a string before using trimEnd
+  const codeString = typeof children === 'string' ? children.trimEnd() : '';
+
   return (
     <Highlight
-      code={children.trimEnd()}
-      language={language}
+      code={codeString}
+      language={typeof language === 'string' ? language.toLowerCase() : 'javascript'}
       theme={{ plain: {}, styles: [] }}
     >
       {({ className, style, tokens, getTokenProps }) => (

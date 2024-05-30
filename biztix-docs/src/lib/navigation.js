@@ -6,8 +6,7 @@ export const navigation = [
   {
     title: 'Getting Started',
     links: [
-      { title: 'Quickstart', href: '/docs/quickstart' },
-      { title: 'Project Structure', href: '/docs/project-structure' },
+      { title: 'Documentation Guide', href: '/docs/documentation-guide' },
     ],
   },
 ]

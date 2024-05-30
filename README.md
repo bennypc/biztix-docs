@@ -1,1 +1,1 @@
-# biztix-docs
+# biztech-docs
