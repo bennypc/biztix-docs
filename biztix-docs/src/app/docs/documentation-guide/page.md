@@ -182,7 +182,7 @@ This is an example sentence with a footnote.[^1]
 
 ## Custom Classes
 
-Some documentation websites support custom classes for elements. These are often used to apply specific styles.
+There are some custom classes for elements. These are often used to apply specific styles.
 
 ### Lead Paragraph
 
