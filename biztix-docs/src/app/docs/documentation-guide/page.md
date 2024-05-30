@@ -187,3 +187,23 @@ There are some custom classes for elements. These are often used to apply specif
 ### Lead Paragraph
 
 To apply a lead style to a paragraph, use `{% .lead %}`.
+
+### Callouts
+
+Callouts are used to highlight important information or warnings. They can have different styles based on the type of message.
+
+### Warning Callout
+
+To create a warning callout, use `{% callout type="warning" title="Your Title" %}`. Make sure to close the paragraph with `{% /callout %}`
+
+{% callout type="warning" title="Documentation Maintenance" %}
+This page should be updated whenever significant changes to the project structure are made, to keep it consistent and useful for all developers.
+{% /callout %}
+
+### Informational Callout
+
+For general information callouts, use `{% callout title="Your Title" %}` without specifying a type. Make sure to close the paragraph with `{% /callout %}`
+
+{% callout title="Missing Packages" %}
+If you encounter any issues during the installation, try running `npm install` again or use `npm ci` for a clean install based on `package-lock.json`.
+{% /callout %}
