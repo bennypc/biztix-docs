@@ -18,4 +18,8 @@ export const navigation = [
       { title: 'Create User', href: '/docs/users/create' },
     ],
   },
+  {
+    title: 'QR Codes',
+    links: [{ title: 'QR Code', href: '/docs/qr' }],
+  },
 ]
