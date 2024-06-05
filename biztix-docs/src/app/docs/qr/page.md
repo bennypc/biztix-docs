@@ -13,7 +13,7 @@ The `QR` API service allows admin to create QR codes for many purposes.
 
 ---
 
-## Endpoint
+## Endpoint - Post /qrscan
 
 The `qrscan` API endpoint is used to handle a qr scan from the user. It updates the corresponding registration.
 
@@ -21,11 +21,11 @@ The `qrscan` API endpoint is used to handle a qr scan from the user. It updates 
 POST /qrscan
 ```
 
-## Method
+### Method
 
 Uses the `handler.post` method
 
-## Request Body
+### Request Body
 
 The request body must contain a JSON object with the following properties:
 
@@ -36,7 +36,7 @@ The request body must contain a JSON object with the following properties:
 - `negativePointsConfirmed` (boolean, required)
 - `admin` (boolean, optional)events.
 
-## Response
+### Response
 
 ```json
 {
@@ -51,7 +51,7 @@ The request body must contain a JSON object with the following properties:
 }
 ```
 
-## Internals
+### Internals
 
 1. Checks if the QR code is valid, if so, sends control flow to process this qr redemption
 2. Processes a QR code redemption via DynamoDB — adds points to user's event registration (Registration table), adds the QR code key as being used (Registration table), then returns updated progress.
@@ -61,67 +61,67 @@ The request body must contain a JSON object with the following properties:
 - updates their registration with the new points
 - opens a socket connection to companion app to update live leaderboards
 
-## Endpoint
+## Endpoint - GET /qr
 
 ```
 GET /qr
 ```
 
-## Method
+### Method
 
 Uses the `handler.get` method
 
-## Request Parameters
+### Request Parameters
 
 n/a
 
-## Response
+### Response
 
 ```json
 { "body": [list of qr data]}
 ```
 
-## Internals
+### Internals
 
 1. Gets all qrs from QRS_TABLE
 
-## Endpoint
+## Endpoint - GET /qr/{id}/{eventID}/{year}
 
 ```
 GET /qr/{id}/{eventID}/{year}
 ```
 
-## Method
+### Method
 
 Uses the `handler.getOne` method
 
-## Request Params
+### Request Params
 
 - `id` (string, required) - id of qr code
 - `eventID` (string, required)
 - `year` (number, required)
 
-## Response
+### Response
 
 ```json
 { "body": qr}
 ```
 
-## Internals
+### Internals
 
 1. Gets specific qr code
 
-## Endpoint
+## Endpoint - POST /qr
 
 ```
 POST /qr
 ```
 
-## Method
+### Method
 
 Uses the `handler.create` method
 
-## Request Boddy
+### Request Body
 
 The request body must contain a JSON object with the following properties:
 
@@ -132,7 +132,7 @@ The request body must contain a JSON object with the following properties:
 - `type` (string, required)
 - `data` (object, optional)
 
-## Response
+### Response
 
 ```json
 {
@@ -142,27 +142,27 @@ The request body must contain a JSON object with the following properties:
 }
 ```
 
-## Internals
+### Internals
 
 1. Creates new qr if not exist
 
-## Endpoint
+## Endpoint - PATCH /qr/{id}/{eventID}/{year}
 
 ```
 PATCH /qr/{id}/{eventID}/{year}
 ```
 
-## Method
+### Method
 
 Uses the `handler.update` method
 
-## Request Params
+### Request Params
 
 - `id` (string, required) - id of qr code
 - `eventID` (string, required)
 - `year` (number, required)
 
-## Request Body
+### Request Body
 
 The request body must contain a JSON object with the following properties:
 
@@ -170,7 +170,7 @@ The request body must contain a JSON object with the following properties:
 - `type` (string, optional)
 - `data` (object, optional)
 
-## Response
+### Response
 
 ```json
 {
@@ -179,27 +179,27 @@ The request body must contain a JSON object with the following properties:
 }
 ```
 
-## Internals
+### Internals
 
 1. Updates qr data
 
-## Endpoint
+## Endpoint - DELETE /qr/{id}/{eventID}/{year}
 
 ```
 DELETE /qr/{id}/{eventID}/{year}
 ```
 
-## Method
+### Method
 
 Uses the `handler.delete` method
 
-## Request Params
+### Request Params
 
 - `id` (string, required) - id of qr code
 - `eventID` (string, required)
 - `year` (number, required)
 
-## Response
+### Response
 
 ```json
 {
@@ -208,6 +208,6 @@ Uses the `handler.delete` method
 }
 ```
 
-## Internals
+### Internals
 
 1. Deletes the qr if exists.

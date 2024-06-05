@@ -16,6 +16,11 @@ export const navigation = [
     links: [
       { title: 'Users', href: '/docs/users' },
       { title: 'Create User', href: '/docs/users/create' },
+      { title: 'Check User', href: '/docs/users/check-user' },
+      {
+        title: 'Check User Membership',
+        href: '/docs/users/check-user-membership',
+      },
     ],
   },
   {
